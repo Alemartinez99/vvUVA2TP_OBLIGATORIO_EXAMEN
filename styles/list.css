@@ -2,7 +2,6 @@
     font-size: 1.6rem;
 }
 
-
 .list-group-item:hover {
     transform-origin: left;
     transform: scale3d(1.07, 1.03, 1) translateX(10px);

@@ -29,6 +29,10 @@ a {
   text-decoration: none !important;
 }
 
+#sacar-estilo {
+  color: inherit !important;
+}
+
 nav {
   background-color: rgb(255, 255, 255) !important;
   width: 100%;
