@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/styles/list.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>TPUVA2 - Avisos</title>
@@ -15,7 +16,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-xl">
+    <nav class="navbar navbar-expand-xl bg-light">
         <div class="container-fluid">
             <div class="mi-logo">
                 <div class="mi-icono-inicio">
@@ -40,32 +41,72 @@
         </div>
     </nav>
 
-    <br><br><br><br>
-
-    <div class="container mt-lg-4">
-        <h2 class="mb-4">Tareas y Recordatorios por Materia</h2>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <strong>Matemática:</strong> 25/4 - Entrega de práctica de funciones.
+    <!-- Creo un contenier, agregandole padding top y bot de 5-->
+    <div class="container py-5">
+        <!--agrego margen bot para separar el titulo de la lista-->
+        <h1 class="mb-4">Avisos por Materia:</h1>
+        <!-- list-group: me da estilo a las listas -->
+        <!-- list-group-flush: me saca los bordes y padding exteriores-->
+        <ul class="list-group list-group-flush">
+            <!-- list-group-item: me da estilo a mis items-->
+            <li class="">
+                <div class="titulo-materia">Introduccion a la Algoritmia - Lunes</div>
+                <!-- estilo de listas y ms-3 es margen izquiero-->
+                <ul class="list-group list-group-flush ms-3">
+                    <li class="list-group-item">20/5 - Entrega TP 1</li>
+                    <li class="list-group-item">25/5 - Parcial 1</li>
+                    <li class="list-group-item">28/5 - Corrección de TP</li>
+                    <li class="list-group-item">30/5 - Clase extra</li>
+                    <li class="list-group-item">3/6 - Entrega TP 2</li>
+                </ul>
+            </li>
+            <li class="">
+                <div class="titulo-materia">Sistemas de Informacion I - Martes</div>
+                <ul class="list-group list-group-flush ms-3">
+                    <li class="list-group-item">22/5 - Entrega ejercicios</li>
+                    <li class="list-group-item">26/5 - Práctica en clase</li>
+                    <li class="list-group-item">28/5 - Examen parcial</li>
+                    <li class="list-group-item">2/6 - Revisión</li>
+                    <li class="list-group-item">5/6 - Recuperatorio</li>
+                </ul>
+            </li>
+            <li class="">
+                <div class="titulo-materia">Arquitctura de computadores - Miercoles</div>
+                <ul class="list-group list-group-flush ms-3">
+                    <li class="list-group-item">21/5 - Subir maqueta</li>
+                    <li class="list-group-item">23/5 - Corrección grupal</li>
+                    <li class="list-group-item">25/5 - Feedback individual</li>
+                    <li class="list-group-item">30/5 - Presentación sitio</li>
+                    <li class="list-group-item">4/6 - Última entrega</li>
+                </ul>
+            </li>
+            <li class="">
+                <div class="titulo-materia">Marketing - Jueves</div>
+                <ul class="list-group list-group-flush ms-3">
+                    <li class="list-group-item">23/5 - Práctica de laboratorio</li>
+                    <li class="list-group-item">25/5 - Teoría de enlaces</li>
+                    <li class="list-group-item">27/5 - Evaluación</li>
+                    <li class="list-group-item">29/5 - Experimento en clase</li>
+                    <li class="list-group-item">3/6 - Informe final</li>
+                </ul>
             </li>
             <li class="list-group-item">
-                <strong>Programación:</strong> 26/4 - Subir TP de estructuras condicionales.
-            </li>
-            <li class="list-group-item">
-                <strong>Diseño Web:</strong> 27/4 - Entrega parcial HTML + CSS.
-            </li>
-            <li class="list-group-item">
-                <strong>Base de Datos:</strong> 28/4 - Cuestionario sobre modelo relacional.
-            </li>
-            <li class="list-group-item">
-                <strong>Sistemas Operativos:</strong> 29/4 - Leer capítulo 3 y responder preguntas.
+                <div class="titulo-materia">Diseño y Desarrollo Web - Viernes</div>
+                <ul class="list-group list-group-flush ms-3">
+                    <li class="list-group-item">24/5 - Informe de cinemática</li>
+                    <li class="list-group-item">27/5 - Práctica con sensores</li>
+                    <li class="list-group-item">29/5 - Evaluación</li>
+                    <li class="list-group-item">2/6 - Actividad grupal</li>
+                    <li class="list-group-item">6/6 - Entrega trabajo final</li>
+                </ul>
             </li>
         </ul>
     </div>
 
 
+
     <footer class="bg-light text-center py-3 mt-4">
-        Curso: Nro curso / Profesora: Patricia Litovicius
+        Curso: 15130 / Profesora: Patricia Litovicius
     </footer>
 </body>
 

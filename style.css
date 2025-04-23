@@ -126,4 +126,6 @@ nav {
     right: 20px;
   }
 }
-
+.navbar-toggler:hover {
+  background-color: #ffffff;
+}

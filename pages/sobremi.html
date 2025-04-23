@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/styles/sobremi.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>TPUVA2 - Sombre mí</title>
 </head>
 
@@ -15,7 +17,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-xl">
+    <nav class="navbar navbar-expand-xl bg-light">
         <div class="container-fluid">
             <div class="mi-logo">
                 <div class="mi-icono-inicio">
@@ -40,36 +42,92 @@
         </div>
     </nav>
 
-    <br><br><br>
+    <div class="container my-5">
+        <!-- Contenedor principal -->
+        <div class="row">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <a href="http://127.0.0.1:5500/img/fotoAle.jpg" target="_blank"><img src="/img/fotoAle.jpg" alt="Foto de perfil" id="foto-perfil"></a>
+                        
+                        <h2>Alejandro Martinez</h2>
+                        <h3>Estudiante de Licenciatura en Sistemas</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo contenedor (50% del ancho) -->
+            <div class="col-md-5 mt-5 ">
+                <h4>Sobre mí</h4>
+                <p class="pt-3"> Tengo 25 años, estudiante de la Licenciatura en Sistemas en UADE desde el 2025.
+                    <br><br>
+                    Soy desarrollador COBOL en BBVA Argentina desde el 2022, que fue donde arranque en el mundo de
+                    sistemas. <br><br>
+                    No me considero un fanatico de la tecnología, aunque me gusta mucho, considero que me gusta mas la
+                    gestion. <br>
+                    Me encanta aprender cosas nuevas y siempre busco mejorar mis habilidades. <br>
+                    <br>
+                    Saliendo de lo laboral, me gusta mucho correr en Karting, los Videojuegos, jugar al futbol con amigos, ir al
+                    gimnasio y ver Formula1 todos los domingos.
+                </p>
+            </div>
 
-    <div class="container mt-5">
-        <div class="text-center">
-            <img src="tu-imagen.jpg" alt="Foto de perfil" class="rounded-circle mb-3" width="150" height="150">
-            <h1>Nombre Apellido</h1>
-            <h5 class="text-muted">Estudiante de [Nombre de la carrera]</h5>
+            <!-- Tercer contenedor (50% del ancho) -->
+            <div class="col-md-6 px-5">
+                <div class="content-box">
+                    <div class="interests mt-5">
+                        <!-- Gustos e intereses -->
+                        <h4>Intereses</h4>
+                        <!-- le saco el puntito que tienen los LI en las listas-->
+                        <!-- la hago display: flex para poder alinear los items de forma centrada-->
+                        <!-- margen bot para alegar cada item -->
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <!-- me-2 es margen end, para poner margen a la derecha -->
+                                <img src="/icons/web.png" class="me-2"  width="24" height="24" alt="Desarrollo web">
+                                Desarrollo web
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="/icons/gestion.png" class="me-2" width="24" height="24" alt="Gestion">
+                                Gestion
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="https://img.icons8.com/color/24/000000/controller.png" class="me-2" alt="Videojuegos">
+                                Videojuegos
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="/icons/bandera.png" class="me-2" width="24" height="24" alt="Kartings">
+                                Kartings
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="/icons/f1.png" class="me-2"   width="24" height="24" alt="F1">
+                                F1
+                            </li>
+                        </ul>
+
+                        <!-- Expectativas -->
+                        <div class="expectations mt-4">
+                            <h4>Expectativas</h4>
+                            <p class="card-text">Mis expectativas son poder seguir creciendo como profesional, aprender
+                                más sobre nuevas tecnologías y finalmente poder contribuir a proyectos que realmente
+                                impacten
+                                positivamente en la empresa y el cliente. Estoy buscando oportunidades que me permitan
+                                seguir aprendiendo para
+                                poder lograr ir escalando con el tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="mt-4">
-            <h3>Sobre mí</h3>
-            <p>
-                ¡Hola! Soy estudiante de [Nombre de la carrera] y actualmente estoy cursando materias relacionadas con
-                el desarrollo web y la programación. Me interesa mucho el diseño, la tecnología y cómo se pueden usar
-                para resolver problemas reales.
-            </p>
-            <p>
-                En mi tiempo libre me gusta escuchar música, jugar videojuegos, ver series y aprender cosas nuevas por
-                internet. También me interesa mucho el trabajo en equipo y mejorar mis habilidades comunicativas.
-            </p>
-            <p>
-                Mis expectativas para este año son aprobar todas las materias, mejorar mi portfolio personal y empezar a
-                buscar oportunidades en el mundo IT.
-            </p>
+        <!-- Cuarto contenedor (ocupa todo el ancho) -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h4>Encuentrame en</h4>
+            </div>
         </div>
     </div>
 
-
     <footer class="bg-light text-center py-3 mt-4">
-        Curso: Nro curso / Profesora: Patricia Litovicius
+        Curso: 15130 / Profesora: Patricia Litovicius
     </footer>
 </body>
 

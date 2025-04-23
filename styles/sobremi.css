@@ -1,0 +1,11 @@
+#foto-perfil {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #0d6efd;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
