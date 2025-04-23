@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>TPUVA2 - Contacto</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+            <div class="mi-logo">
+                <div class="mi-icono-inicio">
+                    <a href="/index.html"><img src="../icons/log_header.png" alt="icono uade" id="uade-icon"></a>
+                    <!-- <a href="#inicio"><img src="icons/uade.webp" alt="icono uade" id="uade-icon"></a> -->
+                </div>
+                <div class="mi-hamburguesa">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="./avisos.html">Avisos</a>
+                <a class="nav-link" href="./sobremi.html">Sobre mí</a>
+                <a class="nav-link" href="./materias2025.html">Materias 2025</a>
+                <a class="nav-link" aria-current="page" href="">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Formulario de Contacto</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="tunombre@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto" placeholder="Motivo del mensaje">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu mensaje acá..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+    <footer class="bg-light text-center py-3 mt-4">
+        Curso: Nro curso / Profesora: Patricia Litovicius
+    </footer>
+</body>
+
+</html>

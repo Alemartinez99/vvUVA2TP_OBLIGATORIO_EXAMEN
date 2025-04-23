@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links a mis CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/table.css">
+    <!-- Vinculo Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>TPUVA2 - Home</title>
+</head>
+
+<body>
+
+    <!-- aasd-->
+    <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+            <div class="mi-logo">
+                <div class="mi-icono-inicio">
+                    <a href="/index.html"><img src="icons/log_header.png" alt="icono uade" id="uade-icon"></a>
+                    <!-- <a href="#inicio"><img src="icons/uade.webp" alt="icono uade" id="uade-icon"></a> -->
+                </div>
+                <div class="mi-hamburguesa">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
+                <a class="nav-link" aria-current="page" href="">Home</a>
+                <a class="nav-link" href="./pages/avisos.html">Avisos</a>
+                <a class="nav-link" href="./pages/sobremi.html">Sobre mí</a>
+                <a class="nav-link" href="./pages/materias2025.html">Materias 2025</a>
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Clase container de boostrap para crear un contenedor -->
+    <!-- mt : margen top -->
+    <div class="container mt-5">
+        <h2 class="mb-5">Materias que estoy cursando:</h2>
+        <!-- Clase table: Diseño para la tabla -->
+        <!-- table-bordered, dar borde a filas -->
+        <!-- table-hover, al pasar el cursor por alguna celda o fila, este se resaltara-->
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre de la materia</th>
+                    <th>Día y horario</th>
+                    <th>Modalidad y aula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Introduccion a la algoritmia</td>
+                    <td>Lunes - 18:30</td>
+                    <td>Virtual (Aula Online)</td>
+                </tr>
+                <tr>
+                    <td>Sistemas de Informacion I</td>
+                    <td>Martes - 18:30</td>
+                    <td>Virtual (Aula Online)</td>
+                </tr>
+                <tr>
+                    <td>Arquitctura de computadores</td>
+                    <td>Miércoles - 18:30</td>
+                    <td>Virtual (Aula Online)</td>
+                </tr>
+                <tr>
+                    <td>Marketing</td>
+                    <td>Jueves - 18:30</td>
+                    <td>Virtual (Aula Online)</td>
+                </tr>
+                <tr>
+                    <td>Diseño y desarrollo web</td>
+                    <td>Viernes - 18:30</td>
+                    <td>Virtual (Aula Online)</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <!-- bg-liht: color para el fondo -->
+    <!-- centro el texto al medio-->
+    <!-- py: agrego paddint abajo y arriba-->
+    <!-- mt: agrego margen top-->
+    <footer class="bg-light text-center py-3 mt-4">
+        Curso: Nro curso / Profesora: Patricia Litovicius
+    </footer>
+
+</body>
+
+</html>

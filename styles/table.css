@@ -1,0 +1,13 @@
+.table {
+  border-collapse: separate; /* Me separa los border*/
+  border-spacing: 0 10px; /* separamiento arriba/abajo o izquierda derecha*/
+  background: linear-gradient(to right,#e0f7fa, #d3f5ff); /* fondo de izquierda a derecha cambia su tonalidad*/
+  border-radius: 10px; /* Border-radius de la tabla en general*/
+}
+.table th,
+.table td {
+  text-align: center; /* texto al medio*/
+}
+.table tbody tr:hover {
+  transform: scale(1.009);
+}

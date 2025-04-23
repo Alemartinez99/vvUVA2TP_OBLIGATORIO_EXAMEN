@@ -1,0 +1,129 @@
+* {
+  /* Esto lo pongo siempre */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1em;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+nav {
+  background-color: rgb(255, 255, 255) !important;
+  width: 100%;
+}
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mi-icono-inicio {
+  display: flex;
+  justify-content: center;
+}
+
+.mi-icono-inicio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.mi-icono-inicio span {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 530px) {
+  .mi-icono-inicio span {
+    display: none;
+  }
+}
+
+#uade-icon {
+  border-radius: 16px;
+  width: 70%;
+}
+
+.label_logo {
+  background-color: #0a71a6;
+  text-transform: uppercase;
+}
+
+.mi-nav-bar {
+  display: flex;
+  margin-left: 200px;
+}
+
+.mi-nav-bar a {
+  display: flex !important;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 1.9rem;
+}
+
+.navbar-collapse {
+  justify-content: space-evenly !important;
+}
+
+.mi-nav-bar a:hover,
+#uade-icon:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 1450px) {
+  .mi-nav-bar {
+    margin-left: 50px;
+  }
+  .mi-nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1237px) {
+  .mi-nav-bar {
+    margin-left: 0px;
+  }
+  .mi-nav-link {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mi-nav-bar,
+  .mi-logo {
+    width: 100% !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+  }
+  .mi-hamburguesa {
+    position: fixed;
+    top: 1%;
+    right: 20px;
+  }
+}
+
