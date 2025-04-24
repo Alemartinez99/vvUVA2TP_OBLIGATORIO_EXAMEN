@@ -13,10 +13,6 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-
     <nav class="navbar navbar-expand-xl bg-light">
         <div class="container-fluid">
             <div class="mi-logo">
@@ -42,7 +38,7 @@
         </div>
     </nav>
 
-    <div class="container my-5">
+    <main class="container my-5">
         <!-- Contenedor principal -->
         <div class="row">
             <div class="row">
@@ -55,91 +51,102 @@
                         <h3>Estudiante de Licenciatura en Sistemas</h3>
                     </div>
                 </div>
-            </div>
-            <!-- Segundo contenedor (50% del ancho) -->
-            <div class="col-md-5 mt-5 ">
-                <h4>Sobre mí</h4>
-                <p class="pt-3"> Tengo 25 años, estudiante de la Licenciatura en Sistemas en UADE desde el 2025.
-                    <br><br>
-                    Soy desarrollador COBOL en BBVA Argentina desde el 2022, que fue donde arranque en el mundo de
-                    sistemas. <br><br>
-                    No me considero un fanatico de la tecnología, aunque me gusta mucho, considero que me gusta mas la
-                    gestion. <br>
-                    Me encanta aprender cosas nuevas y siempre busco mejorar mis habilidades. <br>
-                    <br>
-                    Saliendo de lo laboral, me gusta mucho correr en Karting, los Videojuegos, jugar al futbol con
-                    amigos, ir al
-                    gimnasio y ver Formula1 todos los domingos.
-                </p>
-            </div>
+                <!-- Segundo contenedor (50% del ancho) -->
+                <div class="col-md-5 mt-5 ">
+                    <h4>Sobre mí</h4>
+                    <p class="pt-3"> Tengo 25 años, estudiante de la Licenciatura en Sistemas en UADE desde el 2025.
+                        <br><br>
+                        Soy desarrollador COBOL en BBVA Argentina desde el 2022, que fue donde arranque en el mundo de
+                        sistemas. <br><br>
+                        No me considero un fanatico de la tecnología, aunque me gusta mucho, considero que me gusta mas
+                        la
+                        gestion. <br>
+                        Me encanta aprender cosas nuevas y siempre busco mejorar mis habilidades. <br>
+                        <br>
+                        Saliendo de lo laboral, me gusta mucho correr en Karting, los Videojuegos, jugar al futbol con
+                        amigos, ir al
+                        gimnasio y ver Formula1 todos los domingos.
+                    </p>
+                </div>
 
-            <!-- Tercer contenedor (50% del ancho) -->
-            <div class="col-md-6 px-5">
-                <div class="content-box">
-                    <div class="interests mt-5">
-                        <!-- Gustos e intereses -->
-                        <h4>Intereses</h4>
-                        <!-- le saco el puntito que tienen los LI en las listas-->
-                        <!-- la hago display: flex para poder alinear los items de forma centrada-->
-                        <!-- margen bot para alegar cada item -->
-                        <ul class="list-unstyled">
-                            <li class="d-flex align-items-center mb-2">
-                                <!-- me-2 es margen end, para poner margen a la derecha -->
-                                <img src="/icons/web.png" class="me-2" width="24" height="24" alt="Desarrollo web">
-                                Desarrollo web
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <img src="/icons/gestion.png" class="me-2" width="24" height="24" alt="Gestion">
-                                Gestion
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <img src="https://img.icons8.com/color/24/000000/controller.png" class="me-2"
-                                    alt="Videojuegos">
-                                Videojuegos
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <img src="/icons/bandera.png" class="me-2" width="24" height="24" alt="Kartings">
-                                Kartings
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <img src="/icons/f1.png" class="me-2" width="24" height="24" alt="F1">
-                                F1
-                            </li>
-                        </ul>
+                <!-- Tercer contenedor (50% del ancho) -->
+                <div class="col-md-6 px-5">
+                    <div class="content-box">
+                        <div class="interests mt-5">
+                            <!-- Gustos e intereses -->
+                            <h4>Intereses</h4>
+                            <!-- le saco el puntito que tienen los LI en las listas-->
+                            <!-- la hago display: flex para poder alinear los items de forma centrada-->
+                            <!-- margen bot para alegar cada item -->
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-2">
+                                    <!-- me-2 es margen end, para poner margen a la derecha -->
+                                    <img src="/icons/web.png" class="me-2" width="24" height="24" alt="Desarrollo web">
+                                    Desarrollo web
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <img src="/icons/gestion.png" class="me-2" width="24" height="24" alt="Gestion">
+                                    Gestion
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <img src="https://img.icons8.com/color/24/000000/controller.png" class="me-2"
+                                        alt="Videojuegos">
+                                    Videojuegos
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <img src="/icons/bandera.png" class="me-2" width="24" height="24" alt="Kartings">
+                                    Kartings
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <img src="/icons/f1.png" class="me-2" width="24" height="24" alt="F1">
+                                    F1
+                                </li>
+                            </ul>
 
-                        <!-- Expectativas -->
-                        <div class="expectations mt-4">
-                            <h4>Expectativas</h4>
-                            <p class="card-text">Mis expectativas son poder seguir creciendo como profesional, aprender
-                                más sobre nuevas tecnologías y finalmente poder contribuir a proyectos que realmente
-                                impacten
-                                positivamente en la empresa y el cliente. Estoy buscando oportunidades que me permitan
-                                seguir aprendiendo para
-                                poder lograr ir escalando con el tiempo.</p>
+                            <!-- Expectativas -->
+                            <div class="expectations mt-4">
+                                <h4>Expectativas</h4>
+                                <p class="card-text">Mis expectativas son poder seguir creciendo como profesional,
+                                    aprender
+                                    más sobre nuevas tecnologías y finalmente poder contribuir a proyectos que realmente
+                                    impacten
+                                    positivamente en la empresa y el cliente. Estoy buscando oportunidades que me
+                                    permitan
+                                    seguir aprendiendo para
+                                    poder lograr ir escalando con el tiempo.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Cuarto contenedor (ocupa todo el ancho) -->
+            <div class="row mt-5">
+                <ul class="list-unstyled d-flex justify-content-around text-center">
+                    <li class="d-flex flex-column"> <a href="https://www.instagram.com/" target="_blank"><img
+                                src="/icons/instagram.png" alt="instagram" width="100"></a>
+                        <strong>Instagram</strong>
+                    </li>
+                    <li class="d-flex flex-column py-1"><a
+                            href="https://github.com/Alemartinez99/vvUVA2TP_OBLIGATORIO_EXAMEN" target="_blank"><img
+                                src="/icons/git.png" alt="github" width="100"></a>
+                        <strong class="py-1">GitHub</strong>
+                    </li>
+                    <li class="d-flex flex-column"><a href="https://www.linkedin.com/in/alejandronmartinez/"
+                            target="_blank"><img src="/icons/linkedin.png" alt="linkedin" width="100"></a>
+                        <strong>Linkedin</strong>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Cuarto contenedor (ocupa todo el ancho) -->
-        <div class="row mt-5">
-            <ul class="list-unstyled d-flex justify-content-around text-center">
-                <li class="d-flex flex-column"> <a href="https://www.instagram.com/" target="_blank"><img src="/icons/instagram.png" alt="instagram" width="100"></a>
-                    <strong>Instagram</strong>
-                </li>
-                <li class="d-flex flex-column py-1"><a href="https://github.com/Alemartinez99/vvUVA2TP_OBLIGATORIO_EXAMEN" target="_blank"><img src="/icons/git.png" alt="github" width="100"></a>
-                    <strong class="py-1">GitHub</strong>
-                </li>
-                <li class="d-flex flex-column"><a href="https://www.linkedin.com/in/alejandronmartinez/" target="_blank"><img src="/icons/linkedin.png" alt="linkedin" width="100"></a>
-                    <strong>Linkedin</strong>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <footer class="bg-light text-center py-3 mt-4">
-        Curso: 15130 / Profesora: Patricia Litovicius
-    </footer>
+        <footer class="bg-light text-center py-3 mt-4">
+            Curso: 15130 / Profesora: Patricia Litovicius
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+
 </body>
 
 </html>

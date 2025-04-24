@@ -5,8 +5,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex:auto;
 }
 
 h1 {
@@ -117,8 +128,14 @@ nav {
 }
 
 @media screen and (max-width: 1199px) {
-  .mi-nav-bar,
+
   .mi-logo {
+    width: 100%;
+  }
+  .mi-icono-inicio a {
+    padding: 0;
+  }
+  .mi-nav-bar{
     width: 100% !important;
     flex-direction: column !important;
     justify-content: flex-end !important;
@@ -133,3 +150,4 @@ nav {
 .navbar-toggler:hover {
   background-color: #ffffff;
 }
+
