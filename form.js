@@ -14,6 +14,6 @@
       form.classList.add('was-validated');
     }, false);
   });
-  console.log("Validación cargada");
+  console.log("Form ok");
 })();
 
