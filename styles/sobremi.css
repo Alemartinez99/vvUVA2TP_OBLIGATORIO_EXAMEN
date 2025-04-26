@@ -1,15 +1,18 @@
+/* Estilo para la imagen de perfil */
 #foto-perfil {
-    width: 15%;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid #0d6efd;
+    width: 15%; /* La imagen ocupa el 15% del ancho del contenedor */
+    height: auto; /* Altura automática para mantener proporciones */
+    border-radius: 50%; /* Hace la imagen completamente redonda */
+    border: 5px solid #0d6efd; /* Borde azul (color Bootstrap primary) de 5px */
 }
 
+/* Estilo cuando el mouse pasa por encima de la imagen */
 #foto-perfil:hover {
-    border: 4px solid #0d6efd;
+    border: 4px solid #0d6efd; /* Cambia el grosor del borde a 4px (efecto sutil al hacer hover) */
 }
 
+/* Fuente general para todo el cuerpo del sitio */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Familia de fuentes elegida */
 }
-

@@ -4,22 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces a CSS -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../styles/list.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Enlace para usar los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icono de la pestaña -->
     <link rel="icon" type="image/png" href="../icons/inicio.png">
+
+    <!-- Titulo de la página -->
     <title>TPUVA2 - Avisos</title>
 </head>
 
 <body>
+    <!-- Barra de navegación superior -->
     <nav class="navbar navbar-expand-xl bg-light">
         <div class="container-fluid">
+            <!-- Contenedor de logo y botón hamburguesa -->
             <div class="mi-logo">
                 <div class="mi-icono-inicio">
-                    <a href="../index.html"><img src="../icons/log_header.png" alt="icono uade" id="uade-icon"></a>
-                    <!-- <a href="#inicio"><img src="icons/uade.webp" alt="icono uade" id="uade-icon"></a> -->
+                    <a href="../index.html">
+                        <img src="../icons/log_header.png" alt="icono uade" id="uade-icon">
+                    </a>
                 </div>
+                <!-- Botón hamburguesa para colapsar menú en pantallas chicas -->
                 <div class="mi-hamburguesa">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
@@ -28,6 +39,7 @@
                     </button>
                 </div>
             </div>
+            <!-- Menú de navegación -->
             <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
                 <a class="nav-link" href="../index.html">Home</a>
                 <a class="nav-link" aria-current="page" href="">Avisos</a>
@@ -38,18 +50,27 @@
         </div>
     </nav>
 
-    <!-- Creo un contenier, agregandole padding top y bot de 5-->
+    <!-- Contenido principal -->
+    <!-- container: centra y da padding lateral automáticamente -->
+    <!-- py-5: padding top y bottom grandes (5 unidades de Bootstrap) -->
     <main class="container py-5">
-        <!--agrego margen bot para separar el titulo de la lista-->
+
+        <!-- mb-4: margen abajo del título para separarlo de la lista -->
         <h1 class="mb-4">Avisos por Materia:</h1>
-        <!-- list-group: me da estilo a las listas -->
-        <!-- list-group-flush: me saca los bordes y padding exteriores-->
+
+        <!-- list-group: da estilos visuales a listas -->
+        <!-- list-group-flush: elimina bordes y paddings externos -->
         <ul class="list-group list-group-flush">
-            <!-- list-group-item: me da estilo a mis items-->
-            <li >
+
+            <!-- Cada materia en su propio <li> -->
+            <li>
+                <!-- Título de materia (con estilo personalizado en CSS) -->
                 <div class="titulo-materia">Introduccion a la Algoritmia - Lunes</div>
-                <!-- estilo de listas y ms-3 es margen izquiero-->
+
+                <!-- Lista de avisos de esa materia -->
+                <!-- ms-3: margen izquierdo para indentar -->
                 <ul class="list-group list-group-flush ms-3">
+                    <!-- list-group-item: estilo para cada aviso -->
                     <li class="list-group-item">20/05 - Entrega TP 1 (estructuras básicas)</li>
                     <li class="list-group-item">25/05 - Parcial 1 (condicionales y bucles)</li>
                     <li class="list-group-item">28/05 - Corrección de TP en clase</li>
@@ -57,7 +78,8 @@
                     <li class="list-group-item">03/06 - Entrega TP 2 (funciones)</li>
                 </ul>
             </li>
-            <li >
+
+            <li>
                 <div class="titulo-materia">Sistemas de Informacion I - Martes</div>
                 <ul class="list-group list-group-flush ms-3">
                     <li class="list-group-item">22/05 - Entrega ejercicios de modelado</li>
@@ -67,7 +89,8 @@
                     <li class="list-group-item">05/06 - Recuperatorio parcial</li>
                 </ul>
             </li>
-            <li >
+
+            <li>
                 <div class="titulo-materia">Arquitctura de computadores - Miercoles</div>
                 <ul class="list-group list-group-flush ms-3">
                     <li class="list-group-item">21/05 - Subir maqueta del CPU</li>
@@ -77,7 +100,8 @@
                     <li class="list-group-item">04/06 - Entrega final del proyecto</li>
                 </ul>
             </li>
-            <li >
+
+            <li>
                 <div class="titulo-materia">Marketing - Jueves</div>
                 <ul class="list-group list-group-flush ms-3">
                     <li class="list-group-item">23/05 - Práctica de segmentación</li>
@@ -87,6 +111,7 @@
                     <li class="list-group-item">03/06 - Entrega informe de campaña</li>
                 </ul>
             </li>
+
             <li>
                 <div class="titulo-materia">Diseño y Desarrollo Web - Viernes</div>
                 <ul class="list-group list-group-flush ms-3">
@@ -97,16 +122,17 @@
                     <li class="list-group-item">13/06 - Parcial 2</li>
                 </ul>
             </li>
+
         </ul>
     </main>
 
+    <!-- Pie de página -->
     <footer class="bg-light text-center py-3 mt-4">
         Curso: 15130 / Profesora: Patricia Litovicius
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <!-- Scripts de Bootstrap necesarios para funcionalidades JS como el colapso del menú -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

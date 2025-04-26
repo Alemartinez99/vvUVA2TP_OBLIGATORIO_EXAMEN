@@ -1,5 +1,5 @@
 * {
-  /* Esto lo pongo siempre */
+  /* Reinicio general: elimina márgenes y paddings por defecto, y ajusta el modelo de caja */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,20 +7,22 @@
 
 html,
 body {
+  /* Asegura que ocupen el 100% de la altura de la ventana */
   height: 100%;
-  
 }
 
 body {
+  /* Fuente por defecto */
   font-family: sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Estructura vertical para usar el footer abajo */
 }
 
 main {
-  flex:auto;
+  flex: auto; /* El main ocupa todo el espacio disponible entre header y footer */
 }
 
+/* Tamaños de fuente para distintos encabezados */
 h1 {
   font-size: 3.5em;
 }
@@ -33,37 +35,39 @@ h3 {
 p {
   font-size: 1em;
 }
+
 ul {
-  list-style: none;
+  list-style: none; /* Elimina los puntos de las listas */
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none !important; /* Quita el subrayado de los links */
 }
 
 #sacar-estilo {
-  color: inherit !important;
+  color: inherit !important; /* Usa el color que tenga el elemento padre */
 }
 
 nav {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 255, 255) !important; /* Fondo blanco para el nav */
   width: 100%;
 }
+
 .container-fluid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Espaciado entre logo y enlaces */
 }
 
 .mi-icono-inicio {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra el ícono dentro del contenedor */
 }
 
 .mi-icono-inicio a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 50px; /* Espaciado a la izquierda del ícono */
 }
 
 .mi-icono-inicio span {
@@ -73,6 +77,7 @@ nav {
   margin-bottom: 1%;
 }
 
+/* Oculta el span (texto) cuando el ancho de pantalla es menor a 530px */
 @media screen and (max-width: 530px) {
   .mi-icono-inicio span {
     display: none;
@@ -80,36 +85,37 @@ nav {
 }
 
 #uade-icon {
-  border-radius: 16px;
-  width: 70%;
+  border-radius: 16px; /* Bordes redondeados para el ícono */
+  width: 70%; /* Escala del ícono dentro del contenedor */
 }
 
 .label_logo {
   background-color: #0a71a6;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
 }
 
 .mi-nav-bar {
   display: flex;
-  margin-left: 200px;
+  margin-left: 200px; /* Espacio a la izquierda de la barra de navegación */
 }
 
 .mi-nav-bar a {
   display: flex !important;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); /* Color negro para los links */
   padding: 10px;
-  font-size: 1.9rem;
+  font-size: 1.9rem; /* Tamaño grande de letra */
 }
 
 .navbar-collapse {
-  justify-content: space-evenly !important;
+  justify-content: space-evenly !important; /* Espaciado uniforme entre los elementos del navbar */
 }
 
 .mi-nav-bar a:hover,
 #uade-icon:hover {
-  transform: scale(1.4);
+  transform: scale(1.4); /* Agranda los elementos al pasar el mouse */
 }
 
+/* Ajustes de margen y fuente cuando la pantalla es menor a 1450px */
 @media screen and (max-width: 1450px) {
   .mi-nav-bar {
     margin-left: 50px;
@@ -119,6 +125,7 @@ nav {
   }
 }
 
+/* Ajustes adicionales para pantallas menores a 1237px */
 @media screen and (max-width: 1237px) {
   .mi-nav-bar {
     margin-left: 0px;
@@ -128,26 +135,28 @@ nav {
   }
 }
 
+/* Reestructuración del navbar para pantallas chicas (modo móvil) */
 @media screen and (max-width: 1199px) {
-
   .mi-logo {
     width: 100%;
   }
   .mi-icono-inicio a {
     padding: 0;
   }
-  .mi-nav-bar{
+  .mi-nav-bar {
     width: 100% !important;
-    flex-direction: column !important;
+    flex-direction: column !important; /* Enlaces uno abajo del otro */
     justify-content: flex-end !important;
     align-items: flex-end !important;
   }
   .mi-hamburguesa {
     position: fixed;
     top: 1%;
-    right: 20px;
+    right: 20px; /* Ubica el botón de hamburguesa en la esquina superior derecha */
   }
 }
+
+/* Estilo al pasar el mouse sobre el botón hamburguesa */
 .navbar-toggler:hover {
   background-color: #ffffff;
 }

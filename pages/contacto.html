@@ -4,22 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../style.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Ícono del sitio -->
     <link rel="icon" type="image/png" href="../icons/inicio.png">
     <title>TPUVA2 - Contacto</title>
 </head>
 
 <body>
-
+    <!-- Navbar de navegación principal -->
     <nav class="navbar navbar-expand-xl bg-light">
         <div class="container-fluid">
             <div class="mi-logo">
+                <!-- Logo de inicio -->
                 <div class="mi-icono-inicio">
                     <a href="../index.html"><img src="../icons/log_header.png" alt="icono uade" id="uade-icon"></a>
-                    <!-- <a href="#inicio"><img src="icons/uade.webp" alt="icono uade" id="uade-icon"></a> -->
                 </div>
+                <!-- Botón hamburguesa para móviles -->
                 <div class="mi-hamburguesa">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
@@ -28,6 +32,7 @@
                     </button>
                 </div>
             </div>
+            <!-- Links del menú -->
             <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
                 <a class="nav-link" href="../index.html">Home</a>
                 <a class="nav-link" href="./avisos.html">Avisos</a>
@@ -38,23 +43,21 @@
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main class="container">
         <h1 class="py-5">Formulario de Contacto</h1>
+        <!-- Formulario con validación Bootstrap -->
         <form action="" class="needs-validation" novalidate>
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <!--FORM-LABEL hace: 
-                        $form-label-margin-bottom:             .5rem;
-                        $form-label-font-size:                  null;
-                        $form-label-font-weight:                null;
-                        $form-label-font-style:                 null;
-                        $form-label-color:                      null;-->
+                    <!-- Campo de nombre -->
                     <label for="nombrevalidar" class="form-label">Nombre</label>
                     <input type="text" id="nombrevalidar" class="form-control" placeholder="Nombre" required>
                     <div class="valid-feedback">Nombre valido</div>
                     <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
                 </div>
                 <div class="col-md-6">
+                    <!-- Campo de apellido -->
                     <label for="apellidovalidar" class="form-label">Apellido</label>
                     <input type="text" id="apellidovalidar" class="form-control" placeholder="Apellido" required>
                     <div class="valid-feedback">Apellido valido</div>
@@ -62,12 +65,14 @@
                 </div>
             </div>
             <div class="mb-3">
+                <!-- Campo de correo electrónico -->
                 <label for="correovalidar" class="form-label">Mail</label>
                 <input type="email" id="correovalidar" class="form-control" placeholder="ejemplo@gmail.com" required>
                 <div class="valid-feedback">Mail válido.</div>
                 <div class="invalid-feedback">Ingresá un mail válido.</div>
             </div>
             <div class="mb-3">
+                <!-- Campo de mensaje -->
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Deje su mensaje aca..."
                     required></textarea>
@@ -75,16 +80,18 @@
                 <div class="invalid-feedback">Por favor dejá un mensaje.</div>
             </div>
             <div>
+                <!-- Botón de enviar -->
                 <button type="submit" class="btn btn-primary px-3">Enviar</button>
             </div>
         </form>
     </main>
 
-
+    <!-- Footer con info del curso -->
     <footer class="bg-light text-center py-3 mt-4">
         Curso: 15130 / Profesora: Patricia Litovicius
     </footer>
 
+    <!-- Scripts de Bootstrap y JS propio para validaciones -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>

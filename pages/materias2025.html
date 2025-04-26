@@ -4,22 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces a CSS -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="/styles/materia.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Enlaces a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícono de la pestaña -->
     <link rel="icon" type="image/png" href="../icons/inicio.png">
+
+    <!-- Título de la página -->
     <title>TPUVA2 - Materias</title>
 </head>
 
 <body>
+
+    <!-- Barra de navegación superior -->
     <nav class="navbar navbar-expand-xl bg-light">
         <div class="container-fluid">
+            <!-- Contenedor de logo y botón hamburguesa -->
             <div class="mi-logo">
                 <div class="mi-icono-inicio">
-                    <a href="/index.html"><img src="../icons/log_header.png" alt="icono uade" id="uade-icon"></a>
-                    <!-- <a href="#inicio"><img src="icons/uade.webp" alt="icono uade" id="uade-icon"></a> -->
+                    <a href="/index.html">
+                        <img src="../icons/log_header.png" alt="icono uade" id="uade-icon">
+                    </a>
                 </div>
+
+                <!-- Botón hamburguesa que muestra/oculta menú en pantallas chicas -->
                 <div class="mi-hamburguesa">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
@@ -28,6 +41,8 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Menú de navegación -->
             <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
                 <a class="nav-link" href="../index.html">Home</a>
                 <a class="nav-link" href="./avisos.html">Avisos</a>
@@ -38,16 +53,24 @@
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main class="container mt-5">
+        <!-- Título de sección -->
         <h1 class="mb-4">Materias - Primer Cuatrimestre 2025</h1>
+
+        <!-- Lista con Bootstrap -->
         <ul class="list-group mb-4">
             <li class="list-group-item">Introduccion a la Algoritmia</li>
             <li class="list-group-item">Sistemas de Informacion I</li>
             <li class="list-group-item">Arquitctura de computadores</li>
             <li class="list-group-item">Marketing</li>
-            <li class="list-group-item"><a href="https://alemartinez99.github.io/vvUVA1TP2/" id="sacar-estilo">Diseño y
-                    Desarrollo Web</a></li>
+            <!-- Item con enlace -->
+            <li class="list-group-item">
+                <a href="https://alemartinez99.github.io/vvUVA1TP2/" id="sacar-estilo">Diseño y Desarrollo Web</a>
+            </li>
         </ul>
+
+        <!-- Texto explicativo con un enlace adicional -->
         <p>
             Para más información sobre la materia <strong>Diseño y Desarrollo Web</strong>,
             podés visitar la actividad 2 de la Unidad 1 en el siguiente enlace:
@@ -57,14 +80,13 @@
         </p>
     </main>
 
-
+    <!-- Pie de página -->
     <footer class="bg-light text-center py-3 mt-4">
         Curso: 15130 / Profesora: Patricia Litovicius
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <!-- Scripts de Bootstrap para funcionalidades como la hamburguesa y colapsado -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
