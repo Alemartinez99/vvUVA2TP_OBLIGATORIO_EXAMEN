@@ -22,6 +22,20 @@ main {
   flex: auto; /* El main ocupa todo el espacio disponible entre header y footer */
 }
 
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+body.dark-mode a {
+  color: #0dcaf0;
+}
+
 /* Tamaños de fuente para distintos encabezados */
 h1 {
   font-size: 3.5em;
