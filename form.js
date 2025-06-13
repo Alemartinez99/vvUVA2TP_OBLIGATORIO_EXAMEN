@@ -1,4 +1,3 @@
-// form.js
 (() => {
   'use strict';
 
@@ -12,7 +11,6 @@
       if (form.checkValidity()) {
         // 1. Capturamos el nombre que ingresó el usuario
         const nombre = form.querySelector('#nombrevalidar').value;
-
         // 2. Mostramos SweetAlert2 con mensaje personalizado
         Swal.fire({
           title: `¡Gracias por su contacto, ${nombre}!`,
