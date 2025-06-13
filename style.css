@@ -22,20 +22,6 @@ main {
   flex: auto; /* El main ocupa todo el espacio disponible entre header y footer */
 }
 
-body.light-mode {
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #f8f9fa;
-}
-
-body.dark-mode a {
-  color: #0dcaf0;
-}
-
 /* Tamaños de fuente para distintos encabezados */
 h1 {
   font-size: 3.5em;
@@ -63,7 +49,11 @@ a {
 }
 
 nav {
-  background-color: rgb(255, 255, 255) !important; /* Fondo blanco para el nav */
+  background-color: rgb(
+    255,
+    255,
+    255
+  ) !important; /* Fondo blanco para el nav */
   width: 100%;
 }
 
@@ -157,6 +147,9 @@ nav {
   .mi-icono-inicio a {
     padding: 0;
   }
+  #themeToggle {
+    justify-content: end;
+  }
   .mi-nav-bar {
     width: 100% !important;
     flex-direction: column !important; /* Enlaces uno abajo del otro */
@@ -175,3 +168,59 @@ nav {
   background-color: #ffffff;
 }
 
+/*** MODO OSCURO CUSTOM ***/
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* Navbar y footer */
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #1e1e1e !important;
+}
+body.dark-mode .nav-link {
+  color: #fff !important;
+}
+
+/* Tabla */
+body.dark-mode .table {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+body.dark-mode .table thead {
+  background-color: #333 !important;
+}
+body.dark-mode .table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Pie de página */
+footer {
+  background-color: #f8f9fa;
+  color: #333;
+}
+body.dark-mode footer {
+  color: #ccc;
+}
+
+body.dark-mode #uade-icon {
+  filter: invert(1) brightness(2);
+}
+
+/* ——— Toggler hamburguesa en modo oscuro ——— */
+body.dark-mode .navbar-toggler {
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+}
+body.dark-mode .navbar-toggler-icon {
+  /* Invierte el ícono original (que es negro) a blanco */
+  filter: invert(1) brightness(2) !important;
+  /* Ajusta el tamaño para que no se vea demasiado grande */
+  background-size: 1.5em 1.5em !important;
+}

@@ -1,0 +1,47 @@
+/* —— Dark-mode para la página de Materias —— */
+body.dark-mode {
+  background-color: #121212;
+  color: #e1e1e1;
+}
+
+/* Lista de materias */
+body.dark-mode .list-group {
+  background-color: transparent !important;
+}
+
+body.dark-mode .list-group-item {
+  background-color: #2a2a2a !important;
+  color: #e1e1e1 !important;
+  border: 1px solid #444 !important;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .list-group-item:nth-child(odd) {
+  background-color: #272727 !important;
+}
+
+body.dark-mode .list-group-item a {
+  color: #58a6ff !important; /* enlaces en azul claro */
+  text-decoration: none !important;
+}
+
+/* Hover en los ítems */
+body.dark-mode .list-group-item:hover {
+  background-color: #333 !important;
+}
+
+/* Párrafo y enlaces del texto explicativo */
+body.dark-mode main p {
+  color: #ddd !important;
+}
+
+body.dark-mode main p a {
+  color: #58a6ff !important;
+  text-decoration: underline !important;
+}
+
+/* Footer en dark-mode (si no lo tenés ya) */
+body.dark-mode footer {
+  background-color: #1e1e1e !important;
+  color: #aaa !important;
+}

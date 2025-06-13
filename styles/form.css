@@ -1,0 +1,42 @@
+/* ——— Formulario en dark-mode ——— */
+
+/* Etiquetas */
+body.dark-mode .form-label {
+  color: #e1e1e1;
+}
+
+/* Controles */
+body.dark-mode .form-control,
+body.dark-mode .form-control:disabled,
+body.dark-mode textarea.form-control {
+  background-color: #2a2a2a;
+  color:            #e1e1e1;
+  border:           1px solid #555;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #aaa;
+}
+
+/* Botón enviar */
+body.dark-mode .btn-primary {
+  background-color: #0062cc;
+  border-color:     #005cbf;
+}
+body.dark-mode .btn-primary:hover {
+  background-color: #005cbf;
+  border-color:     #004a9f;
+}
+
+/* —— Errores más visibles —— */
+body.dark-mode .form-control.is-invalid {
+  border-color:   #ff1744 !important;
+}
+
+body.dark-mode .form-control.is-invalid:focus {
+  box-shadow:     0 0 0 0.2rem rgba(255, 23, 68, 0.5) !important;
+}
+
+body.dark-mode .invalid-feedback {
+  color: #ff1744 !important;
+}

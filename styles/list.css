@@ -7,3 +7,28 @@
     transform: scale3d(1.07, 1.03, 1) translateX(10px);
     transition: transform 0.3s ease;
 }
+
+/* —— Overrides para Avisos en modo oscuro —— */
+body.dark-mode .titulo-materia {
+  color: #fff !important;
+}
+
+body.dark-mode .list-group-flush {
+  background-color: transparent !important;
+}
+
+body.dark-mode .list-group-flush .list-group-item {
+  background-color: #2a2a2a !important;  /* fondo oscuro */
+  color:            #e1e1e1 !important;  /* texto claro */
+  border:           1px solid #444    !important;  /* bordes suaves */
+  margin-bottom:    0.5rem  !important;  /* espacio entre ítems */
+}
+
+body.dark-mode .list-group-flush .list-group-item:first-child {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+body.dark-mode .list-group-flush .list-group-item:last-child {
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
